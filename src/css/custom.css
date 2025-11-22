@@ -529,9 +529,20 @@ section {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     overflow-y: auto !important;
     overflow-x: hidden !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
   
   .navbar-sidebar--show {
+    transform: translateX(0) !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Ensure sidebar is always visible when show class is present */
+  body:has(.navbar-sidebar--show) .navbar-sidebar {
     transform: translateX(0) !important;
   }
   
