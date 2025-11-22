@@ -30,19 +30,20 @@ This command generates static content into the `build` directory and can be serv
 
 This repository includes a GitHub Actions workflow that automatically deploys the site to GitHub Pages when you push to the `main` or `master` branch.
 
-#### Setup Instructions:
+#### Setup Instructions (IMPORTANT - Do this first!):
 
-1. **Enable GitHub Pages in your repository:**
+1. **Manually Enable GitHub Pages (REQUIRED):**
    - Go to your repository on GitHub
    - Navigate to **Settings** → **Pages**
-   - Under **Source**, select **GitHub Actions** (not "Deploy from a branch")
-   - If you don't see "GitHub Actions" option, make sure you have the necessary permissions
-   - The workflow will automatically enable Pages if it's not already enabled
+   - Under **Source**, select **GitHub Actions** (NOT "Deploy from a branch")
+   - Click **Save**
+   - ⚠️ **This step must be done manually before the workflow can run**
 
-2. **Grant necessary permissions (if needed):**
+2. **Grant necessary permissions:**
    - Go to **Settings** → **Actions** → **General**
-   - Under **Workflow permissions**, select **Read and write permissions**
-   - Check **Allow GitHub Actions to create and approve pull requests**
+   - Scroll down to **Workflow permissions**
+   - Select **Read and write permissions**
+   - Optionally check **Allow GitHub Actions to create and approve pull requests**
    - Click **Save**
 
 3. **Push your code:**
