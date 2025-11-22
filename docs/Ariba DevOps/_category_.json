@@ -1,0 +1,9 @@
+{
+  "label": "Ariba DevOps",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Comprehensive DevOps guides covering Azure, automation, troubleshooting, and security pipelines."
+  }
+}
+

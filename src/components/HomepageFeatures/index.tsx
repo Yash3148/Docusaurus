@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Comprehensive Documentation',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Find everything you need in one place. Our documentation is designed to
+        help you get started quickly and find answers to your questions.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Clear & Organized',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Well-structured content that makes it easy to navigate and find what
+        you&apos;re looking for. Focus on learning, not searching.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Modern & Fast',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Built with modern web technologies for a fast, responsive experience
+        that works seamlessly across all devices.
       </>
     ),
   },

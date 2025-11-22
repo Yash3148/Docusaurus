@@ -1,0 +1,34 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue cloud path (left and upper-left) - intertwined -->
+  <path d="M 6 20 
+           Q 4 16 6 12 
+           Q 8 8 12 10 
+           Q 14 6 18 8 
+           Q 22 6 24 10 
+           Q 26 12 24 16 
+           Q 26 18 22 20 
+           Q 20 22 16 20 
+           Q 14 24 10 22 
+           Q 8 22 6 20 Z" 
+        stroke="#0066cc" 
+        fill="none" 
+        stroke-width="2.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- White cloud path (right and lower-right) - intertwined -->
+  <path d="M 10 22 
+           Q 8 20 10 18 
+           Q 12 16 16 18 
+           Q 18 16 22 18 
+           Q 24 20 22 22 
+           Q 24 24 20 26 
+           Q 18 28 14 26 
+           Q 12 28 10 26 
+           Q 8 24 10 22 Z" 
+        stroke="#ffffff" 
+        fill="none" 
+        stroke-width="2.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+</svg>
