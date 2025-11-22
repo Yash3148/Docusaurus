@@ -591,23 +591,95 @@ section {
     padding: 1rem 0 !important;
     height: calc(100vh - 60px) !important;
     overflow-y: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .navbar-sidebar__item {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
   }
   
   .menu {
     display: block !important;
     width: 100% !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
   
   .menu__list {
     display: block !important;
     width: 100% !important;
     padding: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    list-style: none !important;
+  }
+  
+  .menu__list-item {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
   }
   
   .menu__link {
     width: 100% !important;
     padding: 0.75rem 1rem !important;
     display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: var(--ifm-font-color-base) !important;
+    text-decoration: none !important;
+  }
+  
+  .menu__link:hover {
+    background: var(--ifm-color-emphasis-100) !important;
+    color: var(--ifm-color-primary) !important;
+  }
+  
+  .menu__link--active {
+    background: var(--ifm-color-emphasis-200) !important;
+    color: var(--ifm-color-primary) !important;
+    font-weight: 600 !important;
+  }
+  
+  .menu__caret {
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+  
+  /* Category items in sidebar */
+  .menu__list-item-collapsible {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .menu__list-item-collapsible .menu__link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  
+  /* Ensure all text is visible */
+  .navbar-sidebar * {
+    color: var(--ifm-font-color-base) !important;
+  }
+  
+  /* Category labels */
+  .menu__category {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: 600 !important;
+    color: var(--ifm-color-emphasis-700) !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.08em !important;
   }
 }
 
