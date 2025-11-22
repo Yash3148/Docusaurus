@@ -81,40 +81,70 @@
   transform: scale(1.05);
 }
 
-/* Color Mode Toggle */
+/* Color Mode Toggle - Ensure it's clickable */
 .navbar__item--color-mode-toggle {
-  display: inline-block !important;
-  margin-left: 0.5rem;
-  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  margin-left: 0.5rem !important;
+  cursor: pointer !important;
+  z-index: 1000 !important;
+  position: relative !important;
 }
 
-.navbar__item--color-mode-toggle button {
-  background: transparent;
-  border: 1px solid rgba(0, 102, 204, 0.3);
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  color: var(--ifm-color-emphasis-700);
+.navbar__item--color-mode-toggle > button {
+  background: transparent !important;
+  border: 1px solid rgba(0, 102, 204, 0.3) !important;
+  border-radius: 50% !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  min-width: 2.5rem !important;
+  min-height: 2.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
+  color: var(--ifm-color-emphasis-700) !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 1001 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
-.navbar__item--color-mode-toggle button:hover {
-  background: rgba(0, 102, 204, 0.1);
-  border-color: rgba(0, 102, 204, 0.5);
-  transform: scale(1.1);
+.navbar__item--color-mode-toggle > button:hover {
+  background: rgba(0, 102, 204, 0.1) !important;
+  border-color: rgba(0, 102, 204, 0.5) !important;
+  transform: scale(1.1) !important;
 }
 
-[data-theme='dark'] .navbar__item--color-mode-toggle button {
-  border-color: rgba(77, 153, 230, 0.4);
-  color: var(--ifm-color-emphasis-300);
+.navbar__item--color-mode-toggle > button:active {
+  transform: scale(0.95) !important;
 }
 
-[data-theme='dark'] .navbar__item--color-mode-toggle button:hover {
-  background: rgba(77, 153, 230, 0.15);
-  border-color: rgba(77, 153, 230, 0.6);
+.navbar__item--color-mode-toggle > button:focus {
+  outline: 2px solid var(--ifm-color-primary) !important;
+  outline-offset: 2px !important;
+}
+
+[data-theme='dark'] .navbar__item--color-mode-toggle > button {
+  border-color: rgba(77, 153, 230, 0.4) !important;
+  color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme='dark'] .navbar__item--color-mode-toggle > button:hover {
+  background: rgba(77, 153, 230, 0.15) !important;
+  border-color: rgba(77, 153, 230, 0.6) !important;
+}
+
+/* Ensure no other elements block the toggle */
+.navbar__items--right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  position: relative !important;
+  z-index: 999 !important;
 }
 
 /* Enhanced Hero Section */
