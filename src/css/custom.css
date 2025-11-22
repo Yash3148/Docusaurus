@@ -81,6 +81,42 @@
   transform: scale(1.05);
 }
 
+/* Color Mode Toggle */
+.navbar__item--color-mode-toggle {
+  display: inline-block !important;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar__item--color-mode-toggle button {
+  background: transparent;
+  border: 1px solid rgba(0, 102, 204, 0.3);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.navbar__item--color-mode-toggle button:hover {
+  background: rgba(0, 102, 204, 0.1);
+  border-color: rgba(0, 102, 204, 0.5);
+  transform: scale(1.1);
+}
+
+[data-theme='dark'] .navbar__item--color-mode-toggle button {
+  border-color: rgba(77, 153, 230, 0.4);
+  color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .navbar__item--color-mode-toggle button:hover {
+  background: rgba(77, 153, 230, 0.15);
+  border-color: rgba(77, 153, 230, 0.6);
+}
+
 /* Enhanced Hero Section */
 .hero {
   background: linear-gradient(135deg, #0066cc 0%, #003f7e 50%, #001a33 100%);
