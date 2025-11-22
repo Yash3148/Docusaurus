@@ -35,9 +35,17 @@ This repository includes a GitHub Actions workflow that automatically deploys th
 1. **Enable GitHub Pages in your repository:**
    - Go to your repository on GitHub
    - Navigate to **Settings** → **Pages**
-   - Under **Source**, select **GitHub Actions**
+   - Under **Source**, select **GitHub Actions** (not "Deploy from a branch")
+   - If you don't see "GitHub Actions" option, make sure you have the necessary permissions
+   - The workflow will automatically enable Pages if it's not already enabled
 
-2. **Push your code:**
+2. **Grant necessary permissions (if needed):**
+   - Go to **Settings** → **Actions** → **General**
+   - Under **Workflow permissions**, select **Read and write permissions**
+   - Check **Allow GitHub Actions to create and approve pull requests**
+   - Click **Save**
+
+3. **Push your code:**
    ```bash
    git add .
    git commit -m "Add GitHub Actions deployment"
